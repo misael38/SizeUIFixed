@@ -1,0 +1,9 @@
+name: SizeUIFixed
+api: 3.0.0
+main: SizeUI\SizeUI
+author: FazeHamptonApex
+version: 1.0.0
+commands:
+  size:
+    usage: /size
+    description: Opens The SizeUI Menu
