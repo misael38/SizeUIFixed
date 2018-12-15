@@ -37,23 +37,23 @@ class Main extends PluginBase implements Listener{
                 }
                 switch ($result) {
                     case 0:
-                        $sender->sendMessage("SizeUI");
+                        $sender->sendMessage("Size Updated");
                         $player->$setScale("1");
                         break;
                     case 1:
-                        $sender->sendMessage("SizeUI");
+                        $sender->sendMessage("Size Updated");
                         $player->$setScale("2");
                         break;
                     case 2:
-                        $sender->sendMessage("SizeUI");
+                        $sender->sendMessage("Size Updated");
                         $player->$setScale("3");
                         break;
                     case 3:
-                        $sender->sendMessage("SizeUI");
+                        $sender->sendMessage("Size Updated");
                         $player->$setScale("4");
                         break;
                     case 4:
-                        $sender->sendMessage("SizeUI");
+                        $sender->sendMessage("Exiting SizeUI");
                         break;
                 }
             });
