@@ -8,7 +8,7 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\event\Listener;
 use pocketmine\event\server\ServerCommandEvent;
-class SizeUI extends PluginBase implements Listener{
+class Main extends PluginBase implements Listener{
     public function onEnable(): void{
         $this->getServer()->getPluginManager()->registerEvents(($this), $this);
         $this->getLogger()->info("SizeUI Enabled");
@@ -38,15 +38,19 @@ class SizeUI extends PluginBase implements Listener{
                 switch ($result) {
                     case 0:
                         $sender->sendMessage("SizeUI");
+                        $player->$setScale("1");
                         break;
                     case 1:
                         $sender->sendMessage("SizeUI");
+                        $player->$setScale("2");
                         break;
                     case 2:
                         $sender->sendMessage("SizeUI");
+                        $player->$setScale("3");
                         break;
                     case 3:
                         $sender->sendMessage("SizeUI");
+                        $player->$setScale("4");
                         break;
                     case 4:
                         $sender->sendMessage("SizeUI");
@@ -55,11 +59,11 @@ class SizeUI extends PluginBase implements Listener{
             });
             $form->setTitle("SizeUI");
             $form->setContent("SizeUI");
-            $form->addButton("SizeUI");
-            $form->addButton("SizeUI");
-            $form->addButton("SizeUI");
-            $form->addButton("SizeUI");
-            $form->addButton("SizeUI");
+            $form->addButton("Mini");
+            $form->addButton("Normal");
+            $form->addButton("Big");
+            $form->addButton("Bigger");
+            $form->addButton("Exit");
             $form->sendToPlayer($sender);
         }
         return true;
