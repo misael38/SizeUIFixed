@@ -58,12 +58,12 @@ class Main extends PluginBase implements Listener{
                 }
             });
             $form->setTitle("SizeUI");
-            $form->setContent("SizeUI");
+            $form->setContent("choose your favorite size!");
             $form->addButton("Mini");
             $form->addButton("Normal");
             $form->addButton("Big");
-            $form->addButton("Bigger");
-            $form->addButton("Exit");
+            $form->addButton("Very Big");
+            $form->addButton("Back");
             $form->sendToPlayer($sender);
         }
         return true;
