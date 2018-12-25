@@ -1,7 +1,7 @@
 name: SizeUIFixed
-api: 3.5.1
+api: [3.5.1, 3.5.2]
 main: SizeUI\Main
-author: FazeHamptonApex
+author: Misael38
 version: 2.0.0
 commands:
   size:
