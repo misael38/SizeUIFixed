@@ -1,5 +1,5 @@
 name: SizeUIFixed
-api: [3.5.1, 3.5.2]
+api: [3.5.1, 3.5.2, 3.5.3]
 main: SizeUI\Main
 author: Misael38
 version: 2.0.0
