@@ -37,34 +37,34 @@ class Main extends PluginBase implements Listener{
                 }
                 switch ($result) {
                     case 0:
-                        $sender->sendMessage("Size Updated");
+                        $player->sendMessage(TextFormat::GREEN . "§7[§eSizeUI§7] §aSize Updated To §b1");
                         $player->$setScale("1");
                         break;
                     case 1:
-                        $sender->sendMessage("Size Updated");
+                        $player->sendMessage(TextFormat::GREEN . "§7[§eSizeUI§7] §aSize Updated To §b2");
                         $player->$setScale("2");
                         break;
                     case 2:
-                        $sender->sendMessage("Size Updated");
+                        $player->sendMessage(TextFormat::GREEN . "§7[§eSizeUI§7] §aSize Updated To §b3");
                         $player->$setScale("3");
                         break;
                     case 3:
-                        $sender->sendMessage("Size Updated");
+                        $player->sendMessage(TextFormat::GREEN . "§7[§eSizeUI§7] §aSize Updated To §b4");
                         $player->$setScale("4");
                         break;
                     case 4:
-                        $sender->sendMessage("Exiting SizeUI");
+                        $player->sendMessage(TextFormat::RED . "§cExiting SizeUI Menu");
                         break;
                 }
             });
-            $form->setTitle("SizeUI");
-            $form->setContent("choose your favorite size!");
-            $form->addButton("Mini");
-            $form->addButton("Normal");
-            $form->addButton("Big");
-            $form->addButton("Very Big");
-            $form->addButton("Back");
-            $form->sendToPlayer($sender);
+            $form->setTitle("§lSizeUI Menu");
+            $form->setContent("§lchoose your favorite size!");
+            $form->addButton("§lMini");
+            $form->addButton("§lNormal");
+            $form->addButton("§lBig");
+            $form->addButton("§lVery Big");
+            $form->addButton("§lBack");
+            $form->sendToPlayer($player);
         }
         return true;
     }
