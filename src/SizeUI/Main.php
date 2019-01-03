@@ -1,7 +1,5 @@
 <?php
-
 namespace SizeUI;
-
 use pocketmine\Server;
 use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
@@ -10,9 +8,7 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\event\Listener;
 use pocketmine\server\ServerCommandEvent;
-
-class Main extends PluginBase implements Listener{
-    
+class Main extends PluginBase implements Listener{   
     public function onEnable(): void{
         $this->getServer()->getPluginManager()->registerEvents(($this), $this);
         $this->getLogger()->info("SizeUI Enabled");
